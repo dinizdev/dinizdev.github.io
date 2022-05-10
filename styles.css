@@ -1,0 +1,153 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border:0px;
+}
+
+:root{
+    --main-bg-color: #151417;
+    --main-bg-box-color: #292B2E;
+    --main-text-color-white: #FFFFFF;
+    --main-text-color-orange: #FFB742;
+}
+
+body
+{   
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color-white);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+
+}
+
+.active{
+    color: var(--main-text-color-orange);
+}
+
+/* MENU HEADER */
+
+.menu{
+    display:flex;
+}
+header nav{
+    display: flex;
+    align-items: center;   
+}
+nav li a{
+    color: var(--main-text-color-white);
+    font-weight:bold;
+    padding: 1.0em;
+}
+
+a{
+    list-style: none; 
+    text-decoration: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+nav li {
+    display: inline-block;
+    text-decoration: none;
+}
+button {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-end;
+    padding: 1.0rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1.36rem;
+    background-color: var(--main-text-color-orange);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+button:hover, button:focus{
+    text-decoration: none;
+    background-color: var(--main-text-color-white);
+    color: var(--main-bg-box-color);
+    opacity: 1;
+    right: 0;
+    
+}
+/* INITIAL PAGE */
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container section{
+    text-align: center;
+    padding: 2.0rem 0.5rem;
+}
+h1{
+    font-size: 1.5rem;
+}
+.hand-move{
+    position: relative;
+    top: 1.5rem;
+    width: 2.4rem;
+    height: 2.0rem;
+}
+h2{
+    font-size: 3.0rem;
+    padding: 2.0rem 0.5rem
+}
+span{
+    color: var(--main-text-color-orange);
+    text-decoration: underline;
+}
+img{
+    border-radius: 50%;
+    padding: 1.5rem;
+    width: 13.0rem;
+    height: 13.0rem;
+}
+
+/* SECTION BOXES */
+
+.flex-container-3{
+    display: flex;
+    flex-direction: wWrap;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    background-color: var(--main-bg-box-color);
+    padding:0.70rem;
+    margin: 2rem;
+    width: 41.6rem;
+    box-shadow: 0 0 8.50em var(--main-text-color-orange);
+
+}
+h3{
+    text-align: center;
+    font-weight: bold;
+}
+section p{
+    font-size: 1em;
+    font-weight: bold;
+}
+/* ASIDE BIOGRAPHICS */
+
+aside{
+    display: flex;    
+}
+.flex-container-2{
+    display: flex;
+}
+aside .img-responsive-biography{
+    width: 30rem;
+    height: 30rem;
+}
+p{
+    font-size: 1.4rem;
+    padding:2.0rem ;
+    text-align:center;
+}
